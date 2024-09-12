@@ -1,0 +1,45 @@
+{
+  "nodes": {
+    "lispbm-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1726082856,
+        "narHash": "sha256-sctot5fFY/pWKEE3eebVHWUDElWKJPuGeFi1PgaZXhM=",
+        "owner": "svenssonjoel",
+        "repo": "lispBM",
+        "rev": "e4b8b02b8cc392f8ae9eaf80e3e7c0ffbbc621fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "svenssonjoel",
+        "ref": "master",
+        "repo": "lispBM",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1725930920,
+        "narHash": "sha256-RVhD9hnlTT2nJzPHlAqrWqCkA7T6CYrP41IoVRkciZM=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "44a71ff39c182edaf25a7ace5c9454e7cba2c658",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-24.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "lispbm-src": "lispbm-src",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
