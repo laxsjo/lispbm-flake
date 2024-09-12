@@ -14,7 +14,7 @@ let
 in multiStdenv.mkDerivation {
   pname = name;
   # IDK what pattern should be used to get ahold of the version number...
-  version = src.rev;
+  version = src.rev or "unknown";
   
   meta = with lib; {
     description = "LispBM repl";
