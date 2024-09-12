@@ -1,5 +1,6 @@
 { src
 , build32 ? true
+, supportedSystems
 , multiStdenv
 , lib
 , pkgs
@@ -10,7 +11,6 @@ let
   makeTarget = if build32 then "all" else "all64";
   name = if build32 then "lbm" else "lbm64";
   readline = if build32 then pkgsi686Linux.readline else pkgs.readline; 
-# in 5
 in multiStdenv.mkDerivation {
   pname = name;
   # IDK what pattern should be used to get ahold of the version number...
@@ -18,7 +18,7 @@ in multiStdenv.mkDerivation {
   
   meta = with lib; {
     description = "LispBM repl";
-    platforms = platforms.linux;
+    platforms = supportedSystems;
   };
   
   inherit src;
