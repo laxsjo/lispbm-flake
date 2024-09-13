@@ -21,11 +21,11 @@
     "lispbm-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1726082856,
-        "narHash": "sha256-sctot5fFY/pWKEE3eebVHWUDElWKJPuGeFi1PgaZXhM=",
+        "lastModified": 1726162248,
+        "narHash": "sha256-alYFN6820rRfmhIv23pWWc3Q1lOaTaNegcYPubHG+Yw=",
         "owner": "svenssonjoel",
         "repo": "lispBM",
-        "rev": "e4b8b02b8cc392f8ae9eaf80e3e7c0ffbbc621fa",
+        "rev": "24eeabe02936bcac8f56de0756aa3a1848555ec3",
         "type": "github"
       },
       "original": {

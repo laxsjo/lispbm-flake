@@ -10,7 +10,7 @@
 let
   makeTarget = if build32 then "all" else "all64";
   name = if build32 then "lbm" else "lbm64";
-  readline = if build32 then pkgsi686Linux.readline else pkgs.readline; 
+  platformPkgs = if build32 then pkgsi686Linux else pkgs;
 in multiStdenv.mkDerivation {
   pname = name;
   # IDK what pattern should be used to get ahold of the version number...
@@ -34,10 +34,9 @@ in multiStdenv.mkDerivation {
     cp repl $out/bin/${name}
   '';
   
-  buildInputs = [
-    # pkgs.readline
-    # pkgsi686Linux.readline
+  buildInputs = with platformPkgs; [
     readline
+    libpng
   ];
   
   nativeBuildInputs = with pkgs; [
